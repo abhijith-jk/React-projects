@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
@@ -133,7 +132,10 @@ function App() {
       handleTeamSelectionChange = {handleTeamSelectionChange}
       />}>
         </Route>
-        <Route path='/GroupedTeamMembers' element={<GroupedTeamMembers/>}>
+        <Route path='/GroupedTeamMembers' element={<GroupedTeamMembers
+                                                    selectedTeam={selectedTeam}
+                                                    setTeam={setTeam}
+                                                    employees={employees}/>}>
         </Route>
         <Route path='*' element={<NotFound/>}>
         </Route>
