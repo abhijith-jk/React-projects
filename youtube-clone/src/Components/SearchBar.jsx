@@ -7,7 +7,7 @@ const SearchBar = () => {
   return (
     <Paper
         component= "form"
-        onsubmit={ () => {}}
+        onSubmit={ () => {}}
         sx = {{
             borderRadius: 20,
             border: "1px solid #e3e3e3",
