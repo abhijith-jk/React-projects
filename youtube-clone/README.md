@@ -9,3 +9,5 @@ https://mui.com/material-ui/
 
 I would also highly recommend you understand Youtube V3's API documentation.
 https://developers.google.com/youtube/v3/docs
+
+PS : The project entirely bug-free, but it was a great lesson to learn about API interactions and component based development using React Js.
