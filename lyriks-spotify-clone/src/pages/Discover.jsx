@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 const Discover = () => {
 
     const dispatch = useDispatch();
-    const { activeSong, isplaying } = useSelector((state) => state.player);
+    const { activeSong, isPlaying } = useSelector((state) => state.player);
     const { data, isFetching, error } = useGetTopChartsQuery();
     const genreTitle = 'Pop';
 
@@ -28,14 +28,16 @@ const Discover = () => {
 
             <div className = "flex flex-wrap sm:justify-start justify-center gap-8">
                 { data?.map((song, i) => (
-                    <SongCard 
-                        key = {song.key}
-                        song = {song}
-                        isplaying={isplaying}
-                        activeSong={activeSong}
-                        data={data}
-                        i = {i}
-                    />
+                    (song.artists && song.images &&
+                        <SongCard
+                          key={song.key}
+                          song={song}
+                          isPlaying={isPlaying}
+                          activeSong={activeSong}
+                          data={data}
+                          i={i}
+                        />
+                    )
                 )) }
             </div>
         </div>
