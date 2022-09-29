@@ -1,5 +1,5 @@
 If you wish to test this project out on your local machine, you may download the zip file and subscribe to Youtube V3 API on RapidAPI and use your key in .env file.
-You also have the choise of following the tutorial which I used to make this project.
+You also have the choice of following the tutorial which I used to make this project.
 
 Tutorial: https://youtu.be/FHTbsZEJspU
 Github : https://github.com/adrianhajdin/project_youtube_clone (Complete Source Code)
